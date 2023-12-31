@@ -1,16 +1,14 @@
 from structure.array import Array
+from structure.hash_table import HashTable
+from structure.linked_list import LinkedList
 # This is a test area
 
-newArray = Array()
+    
 
-newArray.Append('a')
-newArray.Append('b')
-newArray.Append('c')
 
-# newArray => [a,b,c]
-
-a = newArray.Pop(); # a
-
-# newArray => [b,c]
-
-print(newArray.length); # 2
+a = LinkedList(10)
+a.append(20)
+a.append(30)
+print(a.append(40))
+print(a.prepend(50))
+print(a.show())
