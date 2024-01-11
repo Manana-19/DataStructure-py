@@ -13,3 +13,5 @@ for i in range(3):
     a.insert(i)
 print(a.root)
 print(a.lookup(5))
+a.remove(5)
+print(a.root)
