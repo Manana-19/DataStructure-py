@@ -69,11 +69,10 @@ class BST:
         
         # Doing the main process of deletion
         if parentNode['left'] == childNode:
-            parentNode['left'] = None
-        
-        elif parentNode['right'] == childNode:
-            parentNode['right'] = None
-
-        
+            
+            # If the child node has no successor node
+            if (childNode['right'] is None) and (childNode['left'] is None):
+                parentNode['left'] = None
+            
 
 
