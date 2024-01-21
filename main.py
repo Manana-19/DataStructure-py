@@ -8,16 +8,19 @@ from structure.bst import BST
 from structure.graph import Graphs
 from algorithms.bubblesort import BubbleSort
 from algorithms.selectionsort import selectionSort
+from algorithms.insertionsort import InsertionSort
 # This is a test area
 
-a=[]
 
-for x in range(5,9):
-    a.append(x)
+import numpy as np
+np.random.seed(12)
+a = list(np.random.randint(0, 50, size=10))
+np.random.seed(12)
+b= list(np.random.randint(0, 50, size=10))
+print((a))
 
-for i in range(0,5,2):
-    a.append(i)
+print(InsertionSort(a))
 
-print(a)
-print(selectionSort(a))
+print(b)
+print(selectionSort(b))
 
