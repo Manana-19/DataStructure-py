@@ -9,6 +9,7 @@ from structure.graph import Graphs
 from algorithms.bubblesort import BubbleSort
 from algorithms.selectionsort import selectionSort
 from algorithms.insertionsort import InsertionSort
+from algorithms.mergeSort import mergeSort
 # This is a test area
 
 
@@ -17,6 +18,9 @@ np.random.seed(12)
 a = list(np.random.randint(0, 50, size=10))
 np.random.seed(12)
 b= list(np.random.randint(0, 50, size=10))
+np.random.seed(12)
+c = list(np.random.randint(0, 50, size=11))
+
 print((a))
 
 print(InsertionSort(a))
@@ -24,3 +28,5 @@ print(InsertionSort(a))
 print(b)
 print(selectionSort(b))
 
+print(c)
+print(mergeSort(c))
