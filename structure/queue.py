@@ -46,8 +46,10 @@ class Queue:
         CurrentNode = self.head
         toShow = []
 
-        for i in range(self.length):
+        i=0
+        while i < self.length:
             toShow.append(CurrentNode['value'])
             CurrentNode=CurrentNode['next']
+            i+=1
         
         return toShow

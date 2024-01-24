@@ -10,6 +10,7 @@ from algorithms.bubblesort import BubbleSort
 from algorithms.selectionsort import selectionSort
 from algorithms.insertionsort import InsertionSort
 from algorithms.mergeSort import mergeSort
+from algorithms.binarySearch import binarySearch
 # This is a test area
 
 
@@ -30,3 +31,5 @@ print(selectionSort(b))
 
 print(c)
 print(mergeSort(c))
+
+print(binarySearch(c,49)) # True

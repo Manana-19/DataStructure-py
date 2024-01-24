@@ -46,10 +46,12 @@ class Stacks:
     def show(self): # Time Complexity: O(n)
         CurrentNode = self.head
         toShow = []
-
-        for i in range(self.length):
+        i=0
+        while i < self.length:
             toShow.append(CurrentNode['value'])
             CurrentNode=CurrentNode['next']
+            i+=1
+
         
         # Reversing the list just so that we can have it in the right order of insertion
         return toShow[::-1]
